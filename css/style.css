@@ -477,7 +477,7 @@ p  { font-size: 1rem; }
 .service-icon {
   width: 72px; height: 72px;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--icon-color, var(--primary)) 12%, transparent);
+  background: rgba(255, 107, 53, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -486,6 +486,13 @@ p  { font-size: 1rem; }
   color: var(--icon-color, var(--primary));
   transition: var(--transition);
 }
+/* Per-card icon background tints using individual overrides */
+.service-card:nth-child(1) .service-icon { background: rgba(255,107,53,.12); }
+.service-card:nth-child(2) .service-icon { background: rgba(139,92,246,.12); }
+.service-card:nth-child(3) .service-icon { background: rgba(34,197,94,.12); }
+.service-card:nth-child(4) .service-icon { background: rgba(245,158,11,.12); }
+.service-card:nth-child(5) .service-icon { background: rgba(236,72,153,.12); }
+.service-card:nth-child(6) .service-icon { background: rgba(6,182,212,.12); }
 .service-card:hover .service-icon {
   background: var(--icon-color, var(--primary));
   color: #fff;

@@ -34,7 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuTny/E8Fxb5bMFuMzGBYQBkyAF8DFbOLNHQGBsMwHRSGDMdZDLzZulVJ/1LckHVLAHBOVq8vlCm0bIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- AOS Animation Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
@@ -697,23 +697,23 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                <input type="text" id="firstName" name="firstName" placeholder="John" autocomplete="given-name" required />
                 <span class="form-error" id="firstNameError"></span>
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" autocomplete="family-name" required />
                 <span class="form-error" id="lastNameError"></span>
               </div>
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required />
               <span class="form-error" id="emailError"></span>
             </div>
             <div class="form-group">
               <label for="phone">Phone Number (Optional)</label>
-              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
@@ -797,7 +797,7 @@
             <h4>Stay in the Loop</h4>
             <p>Get exclusive deals and food news delivered to your inbox.</p>
             <form class="newsletter-form" id="newsletterForm">
-              <input type="email" placeholder="Your email address" aria-label="Email for newsletter" required />
+              <input type="email" id="newsletterEmail" name="newsletterEmail" placeholder="Your email address" aria-label="Email for newsletter" autocomplete="email" required />
               <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
             </form>
           </div>

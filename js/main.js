@@ -4,6 +4,19 @@
 
 'use strict';
 
+/* ---- PAGE LOADER ---- */
+const pageLoader = document.getElementById('pageLoader');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    pageLoader.classList.add('hidden');
+    document.body.style.overflow = '';
+  }, 1800);
+});
+
+// Prevent scroll while loading
+document.body.style.overflow = 'hidden';
+
 /* ---- AOS INIT ---- */
 AOS.init({
   duration: 750,

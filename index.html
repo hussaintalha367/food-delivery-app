@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>QuickBite – Fast Food Delivery at Your Doorstep</title>
+  <meta name="description" content="QuickBite delivers your favourite meals from top restaurants straight to your door. Order online now and enjoy hot, fresh food in under 30 minutes." />
+  <meta name="keywords" content="food delivery, online food order, restaurant delivery, fast food, QuickBite" />
+  <meta name="author" content="QuickBite" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="QuickBite – Fast Food Delivery" />
+  <meta property="og:description" content="Hot meals delivered to your door in 30 minutes or less." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://quickbite.vercel.app" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="QuickBite – Fast Food Delivery" />
+  <meta name="twitter:description" content="Hot meals delivered to your door in 30 minutes or less." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-pizza-slice"></i></span>
+        Quick<span>Bite</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
+        <div class="hero-badge">
+          <i class="fa-solid fa-fire"></i> #1 Food Delivery App
+        </div>
+        <h1 class="hero-title">
+          Delicious Food <br />
+          <span class="gradient-text">Delivered Fast</span><br />
+          To Your Door
+        </h1>
+        <p class="hero-desc">
+          Order from your favourite local restaurants and enjoy hot, fresh meals delivered to your doorstep in 30 minutes or less. 500+ restaurants, one app.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-utensils"></i> Explore Menu
+          </a>
+          <a href="#about" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-play"></i> How It Works
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>50K+</strong><span>Happy Customers</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>500+</strong><span>Restaurants</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>30 min</strong><span>Avg Delivery</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80" alt="Delicious burger" />
+          <div class="hero-float-card card-1">
+            <i class="fa-solid fa-star" style="color:#ffd700"></i>
+            <div><strong>4.9</strong><span>Rating</span></div>
+          </div>
+          <div class="hero-float-card card-2">
+            <i class="fa-solid fa-clock" style="color:#ff6b35"></i>
+            <div><strong>28 min</strong><span>Delivery</span></div>
+          </div>
+          <div class="hero-float-card card-3">
+            <i class="fa-solid fa-shield-halved" style="color:#22c55e"></i>
+            <div><strong>Safe</strong><span>& Secure</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Restaurant kitchen" />
+          </div>
+          <div class="about-img-secondary">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt="Food preparation" />
+          </div>
+          <div class="about-experience-badge">
+            <strong>10+</strong>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+          <div class="section-label"><i class="fa-solid fa-info-circle"></i> About Us</div>
+          <h2 class="section-title">We Deliver More Than Just Food</h2>
+          <p class="about-text">
+            QuickBite was founded with a simple mission — connect people with the best local food in the fastest, most reliable way possible. We partner with hand-picked restaurants that share our passion for quality.
+          </p>
+          <p class="about-text">
+            From artisan pizzas to gourmet burgers, healthy salads to authentic curries — your next favourite meal is just a few taps away.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>100% Fresh & Quality Ingredients</span>
+            </div>
+            <div class="about-feature">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Real-Time Order Tracking</span>
+            </div>
+            <div class="about-feature">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Hygienic Packaging & Safe Delivery</span>
+            </div>
+            <div class="about-feature">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>24/7 Customer Support</span>
+            </div>
+          </div>
+          <a href="#services" class="btn btn-primary">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services section-padding bg-light" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label"><i class="fa-solid fa-star"></i> Our Services</div>
+        <h2 class="section-title">Why Choose QuickBite?</h2>
+        <p class="section-subtitle">We go the extra mile so every meal arrives perfect — from kitchen to your door.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon" style="--icon-color:#ff6b35">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3>Lightning Fast Delivery</h3>
+          <p>We guarantee delivery in 30 minutes or less, or your next order is free. Speed is our promise.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon" style="--icon-color:#8b5cf6">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3>Live Order Tracking</h3>
+          <p>Follow your order in real time on the map — from the restaurant kitchen straight to your front door.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon" style="--icon-color:#22c55e">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>Fresh & Healthy Options</h3>
+          <p>Filter by dietary needs — vegan, gluten-free, keto and more. Eating well has never been easier.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon" style="--icon-color:#f59e0b">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3>Best Price Guarantee</h3>
+          <p>No hidden fees. Transparent pricing with exclusive daily deals and loyalty rewards for regulars.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon" style="--icon-color:#ec4899">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is always on standby — chat, call, or email us any time, day or night.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon" style="--icon-color:#06b6d4">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Secure Payments</h3>
+          <p>Pay safely with cards, wallets or cash on delivery. All transactions are encrypted end-to-end.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== POPULAR MENU SECTION ===== -->
+  <section class="menu section-padding" id="menu">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label"><i class="fa-solid fa-utensils"></i> Our Menu</div>
+        <h2 class="section-title">Popular Dishes</h2>
+        <p class="section-subtitle">Hand-picked favourites loved by thousands of customers every day.</p>
+      </div>
+      <div class="menu-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="menu-tab active" data-filter="all">All</button>
+        <button class="menu-tab" data-filter="burgers">Burgers</button>
+        <button class="menu-tab" data-filter="pizza">Pizza</button>
+        <button class="menu-tab" data-filter="healthy">Healthy</button>
+        <button class="menu-tab" data-filter="desserts">Desserts</button>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card" data-category="burgers" data-aos="zoom-in" data-aos-delay="0">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Classic Burger" />
+            <div class="menu-badge">Bestseller</div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-category">Burgers</div>
+            <h3>Classic Smash Burger</h3>
+            <div class="menu-meta">
+              <span><i class="fa-solid fa-star"></i> 4.8</span>
+              <span><i class="fa-solid fa-clock"></i> 20 min</span>
+            </div>
+            <div class="menu-footer">
+              <span class="menu-price">$12.99</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="pizza" data-aos="zoom-in" data-aos-delay="100">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=80" alt="Margherita Pizza" />
+            <div class="menu-badge new">New</div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-category">Pizza</div>
+            <h3>Margherita Royale</h3>
+            <div class="menu-meta">
+              <span><i class="fa-solid fa-star"></i> 4.9</span>
+              <span><i class="fa-solid fa-clock"></i> 25 min</span>
+            </div>
+            <div class="menu-footer">
+              <span class="menu-price">$14.99</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="healthy" data-aos="zoom-in" data-aos-delay="200">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Fresh Salad" />
+          </div>
+          <div class="menu-info">
+            <div class="menu-category">Healthy</div>
+            <h3>Rainbow Power Bowl</h3>
+            <div class="menu-meta">
+              <span><i class="fa-solid fa-star"></i> 4.7</span>
+              <span><i class="fa-solid fa-clock"></i> 15 min</span>
+            </div>
+            <div class="menu-footer">
+              <span class="menu-price">$10.99</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="desserts" data-aos="zoom-in" data-aos-delay="300">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" alt="Chocolate Cake" />
+            <div class="menu-badge">Popular</div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-category">Desserts</div>
+            <h3>Lava Chocolate Cake</h3>
+            <div class="menu-meta">
+              <span><i class="fa-solid fa-star"></i> 4.9</span>
+              <span><i class="fa-solid fa-clock"></i> 20 min</span>
+            </div>
+            <div class="menu-footer">
+              <span class="menu-price">$8.99</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="burgers" data-aos="zoom-in" data-aos-delay="100">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&q=80" alt="Chicken Burger" />
+          </div>
+          <div class="menu-info">
+            <div class="menu-category">Burgers</div>
+            <h3>Crispy Chicken Burger</h3>
+            <div class="menu-meta">
+              <span><i class="fa-solid fa-star"></i> 4.6</span>
+              <span><i class="fa-solid fa-clock"></i> 22 min</span>
+            </div>
+            <div class="menu-footer">
+              <span class="menu-price">$11.99</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="pizza" data-aos="zoom-in" data-aos-delay="200">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=80" alt="BBQ Pizza" />
+          </div>
+          <div class="menu-info">
+            <div class="menu-category">Pizza</div>
+            <h3>BBQ Chicken Pizza</h3>
+            <div class="menu-meta">
+              <span><i class="fa-solid fa-star"></i> 4.8</span>
+              <span><i class="fa-solid fa-clock"></i> 28 min</span>
+            </div>
+            <div class="menu-footer">
+              <span class="menu-price">$16.99</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats section-padding bg-gradient" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-number" data-target="50000">0</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon"><i class="fa-solid fa-store"></i></div>
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Restaurant Partners</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="stat-number" data-target="1200000">0</div>
+          <div class="stat-label">Orders Delivered</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon"><i class="fa-solid fa-city"></i></div>
+          <div class="stat-number" data-target="120">0</div>
+          <div class="stat-label">Cities Covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label"><i class="fa-solid fa-heart"></i> Testimonials</div>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Real reviews from real customers who love QuickBite.</p>
+      </div>
+      <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"QuickBite is absolutely amazing! My order arrived in under 25 minutes and the food was piping hot. The app is so intuitive and the tracking feature is incredible."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah K." />
+              <div>
+                <strong>Sarah K.</strong>
+                <span>Food Blogger, New York</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"I order through QuickBite at least 4 times a week. The restaurant selection is unbeatable and I've never had an issue with my orders. The customer service is top notch!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Marcus T." />
+              <div>
+                <strong>Marcus T.</strong>
+                <span>Software Engineer, Austin</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+            <p class="testimonial-text">"As a busy mum of three, QuickBite has been a lifesaver. Healthy options for the kids, quick delivery, and the loyalty rewards are a great bonus. Can't recommend enough!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Emily R." />
+              <div>
+                <strong>Emily R.</strong>
+                <span>Parent & Entrepreneur, Chicago</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The variety of restaurants on QuickBite is incredible. I discovered so many hidden gems in my city. The food is always fresh and delivery is consistently fast."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="James P." />
+              <div>
+                <strong>James P.</strong>
+                <span>Marketing Director, LA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="t-btn t-prev" id="tPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="t-dots" id="tDots"></div>
+          <button class="t-btn t-next" id="tNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== PRICING SECTION ===== -->
+  <section class="pricing section-padding bg-light" id="pricing">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label"><i class="fa-solid fa-tags"></i> Pricing</div>
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Choose the plan that fits your lifestyle. No hidden charges, ever.</p>
+      </div>
+      <div class="pricing-toggle" data-aos="fade-up" data-aos-delay="50">
+        <span>Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="pricingToggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span>Annual <span class="save-badge">Save 20%</span></span>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="pricing-header">
+            <div class="pricing-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Starter</h3>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount monthly-price">0</span>
+              <span class="period">/mo</span>
+            </div>
+            <p>Perfect for trying QuickBite for the first time.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> 3 free deliveries/month</li>
+            <li><i class="fa-solid fa-check"></i> Access to 200+ restaurants</li>
+            <li><i class="fa-solid fa-check"></i> Basic order tracking</li>
+            <li><i class="fa-solid fa-check"></i> Email support</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Priority delivery</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Exclusive deals</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="150">
+          <div class="pricing-popular">Most Popular</div>
+          <div class="pricing-header">
+            <div class="pricing-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Pro</h3>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount monthly-price">9</span><span class="amount annual-price" style="display:none">7</span>
+              <span class="period">/mo</span>
+            </div>
+            <p>For food lovers who order regularly.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited free deliveries</li>
+            <li><i class="fa-solid fa-check"></i> Access to all 500+ restaurants</li>
+            <li><i class="fa-solid fa-check"></i> Real-time tracking</li>
+            <li><i class="fa-solid fa-check"></i> Priority support</li>
+            <li><i class="fa-solid fa-check"></i> Priority delivery</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Exclusive deals</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-header">
+            <div class="pricing-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>Elite</h3>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount monthly-price">19</span><span class="amount annual-price" style="display:none">15</span>
+              <span class="period">/mo</span>
+            </div>
+            <p>The ultimate QuickBite experience.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited free deliveries</li>
+            <li><i class="fa-solid fa-check"></i> Access to all 500+ restaurants</li>
+            <li><i class="fa-solid fa-check"></i> Real-time tracking</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 dedicated support</li>
+            <li><i class="fa-solid fa-check"></i> Priority delivery</li>
+            <li><i class="fa-solid fa-check"></i> Exclusive deals & early access</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="faq section-padding" id="faq">
+    <div class="container">
+      <div class="faq-wrapper">
+        <div class="faq-left" data-aos="fade-right">
+          <div class="section-label"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+          <h2 class="section-title">Got Questions? We've Got Answers</h2>
+          <p>Can't find what you're looking for? Reach out to our support team anytime.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">Contact Support <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="faq-right" data-aos="fade-left" data-aos-delay="100">
+          <div class="faq-item">
+            <button class="faq-question">
+              How does QuickBite delivery work?
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Simply download the app or visit our website, enter your address, browse hundreds of nearby restaurants, add items to your cart, and place your order. We'll assign a delivery partner and you'll have hot food at your door in under 30 minutes.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What areas do you deliver to?
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We currently operate in 120+ cities across the US, UK, Canada, and Australia. Enter your postcode on our homepage to check availability in your area. We're expanding every month!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How much does delivery cost?
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Delivery fees vary by restaurant and distance, typically $1.99–$4.99. With our Pro or Elite plans, you get unlimited free deliveries. We always show you the full cost before you confirm your order.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I track my order in real time?
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Once your order is confirmed, you can follow it on a live map — from the moment the restaurant starts preparing your food to the second your delivery partner arrives at your door.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What if there's an issue with my order?
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Your satisfaction is our priority. If something is wrong, contact our 24/7 support team via the app, chat, or email within 24 hours. We'll make it right with a refund or replacement, guaranteed.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How do I become a restaurant partner?
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We'd love to have you! Fill out the partnership form on our website or email partners@quickbite.com. Our team will review your application and get back to you within 48 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== APP DOWNLOAD BANNER ===== -->
+  <section class="app-banner section-padding bg-gradient">
+    <div class="container">
+      <div class="app-banner-grid">
+        <div class="app-banner-content" data-aos="fade-right">
+          <div class="section-label light"><i class="fa-solid fa-mobile-screen"></i> Mobile App</div>
+          <h2 class="section-title light">Download the QuickBite App Today</h2>
+          <p>Get exclusive app-only deals, faster checkout, and seamless order tracking. Available on iOS and Android — free to download.</p>
+          <div class="app-buttons">
+            <a href="#" class="app-btn">
+              <i class="fa-brands fa-apple"></i>
+              <div><span>Download on the</span><strong>App Store</strong></div>
+            </a>
+            <a href="#" class="app-btn">
+              <i class="fa-brands fa-google-play"></i>
+              <div><span>Get it on</span><strong>Google Play</strong></div>
+            </a>
+          </div>
+        </div>
+        <div class="app-banner-image" data-aos="fade-left" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80" alt="App on phone" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label"><i class="fa-solid fa-envelope"></i> Contact Us</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Questions, feedback, or partnership enquiries? We're here to help.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Our HQ</strong>
+              <p>123 Food Street, Flavor District<br/>New York, NY 10001, USA</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <p>+1 (800) 555-BITE<br/>Mon–Sun, 8am–10pm EST</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email Us</strong>
+              <p>hello@quickbite.com<br/>support@quickbite.com</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="100">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                <span class="form-error" id="firstNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                <span class="form-error" id="lastNameError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option>General Enquiry</option>
+                <option>Order Issue</option>
+                <option>Restaurant Partnership</option>
+                <option>Delivery Driver Application</option>
+                <option>Feedback & Suggestions</option>
+              </select>
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent. We'll be in touch shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <span class="logo-icon"><i class="fa-solid fa-pizza-slice"></i></span>
+              Quick<span>Bite</span>
+            </a>
+            <p>Delivering happiness, one meal at a time. QuickBite connects you to the best local restaurants in your city.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Stay in the Loop</h4>
+            <p>Get exclusive deals and food news delivered to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Your email address" aria-label="Email for newsletter" required />
+              <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 QuickBite. All rights reserved. Made with <i class="fa-solid fa-heart" style="color:#ff6b35"></i> for food lovers everywhere.</p>
+        <div class="footer-payments">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+          <i class="fa-brands fa-google-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
